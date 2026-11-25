@@ -1,7 +1,5 @@
-
 gradio
 python-dotenv
 pypdf
-sentence-transformers
-faiss-cpu
+numpy
 google-genai
