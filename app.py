@@ -21,7 +21,7 @@ TITLE ="AI Study Assistant"
 
 DESCRIPTION = """
 upload your lecture notes in PDF format. 
-Ask questions and generate quizzes 
+Ask questions and generate quizzes
 from your notes"""
 
 
@@ -314,7 +314,10 @@ print("\nSearch Results:")
 for result in search_results:
     print(result)
 
-if __name__ == "__main__":      #Launch application
-    demo.launch()
+if __name__ == "__main__":
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860))
+    )
     
 
